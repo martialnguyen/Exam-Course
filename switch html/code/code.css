@@ -1,0 +1,42 @@
+.page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.page__content-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__content-footer h2 {
+    font-size: 1.6rem;
+}
+
+.page__content-footer span {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.page__content-footer i {
+    color: #d43c68;
+}
+
+.page__content h1 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 740px) {
+
+    .page__content h1{
+        text-align: center;
+        line-height: 3rem;
+    }
+}

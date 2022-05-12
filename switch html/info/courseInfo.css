@@ -1,0 +1,160 @@
+.page__blog {
+    width: 100%;
+    height: calc(100vh - 66px);
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+
+
+
+/* Responsive */
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .header__wrap {
+        position: fixed;
+    }
+
+    .page__blog {
+        display: flex;
+        flex-direction: column;
+        overflow: initial;
+    }
+
+
+
+}
+
+
+@media (max-width: 740px) {
+
+    .page__blog {
+        flex-direction: column;
+        overflow: hidden scroll;
+    }
+
+   
+
+}
+.coursedetail_coursename {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left:  24px;
+}
+
+.page__blog {
+    padding: 0 32px;
+}
+
+.coursedetail_text {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 24px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.course_question {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px;
+}
+
+.course_list {
+    list-style: none;
+    margin-left: -16px;
+    width: 50%;
+    display: inline-block;
+}
+
+.course_detaillist1 li {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 1px;
+    color: #666;
+    display:flex;
+    letter-spacing: 1px;
+
+}
+
+.course_detaillist2 li {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 0;
+    color: #666;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.courseicon {
+    margin-right: 5px;
+    font-size: 18px;
+    color: orange;
+    
+}
+
+.course_img {
+    margin-top: 48px;
+    margin-left: 24px;
+}
+
+.course_img_img {
+    width: 240px;
+    border-radius: 10px
+}
+
+.course_register_text {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    padding-left: 80px;
+    padding-top: 24px;
+}
+
+.course_register_button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.course_register_button {
+    font-size: 16px;
+    background-color: orange;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 92px;
+    margin-top: 20px;
+    border-radius: 8px
+}
+
+.course_register_list {
+    list-style: none;
+}
+
+.course_register_info {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.course_register_list li {
+    padding: 12px 0px;
+}
+
+.course_icon {
+    font-size: 14px;
+    padding-right: 16px;
+}

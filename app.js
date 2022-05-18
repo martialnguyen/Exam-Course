@@ -299,27 +299,6 @@ const coursesApp = {
             img: './img/toeic.png',
             link: './toeic.html'
         },
-        {
-            name: 'Cơ sở kỹ thuật đo lường',
-            img: './img/csktdl.png',
-            link: 'https://drive.google.com/drive/folders/11h2rQCySk6HcA7GsHHPzwix3BRMBOSm-?usp=sharing'
-        },
-        {
-            name: 'Kỹ thuật vi sử lý',
-            img: './img/ktvsl.png',
-            link: 'https://www.youtube.com/playlist?app=desktop&list=PL1HxRSJMOMPIHywk2YUlyhn5kt6ARwFvd&fbclid=IwAR1PFlL6ChsRnN7jQRsHiXLQWyQi6B8Y_MLTWV1goKifyFurTW0A-zt6WII'
-        },
-        {
-            name: 'Thông tin số',
-            img:'./img/tts.png',
-            link: 'https://drive.google.com/drive/folders/1EyU1cF7g74_YxXINqCLr3oeSHx-qpNzZ?usp=sharing'
-        },
-        {
-            name: 'Xử lý tín hiệu số',
-            img:'./img/xlths.png',
-            link: 'https://drive.google.com/drive/folders/1L93c4pI-rXfvfVEVlnn_yRQ-cVLsshmC?usp=sharing'
-        },
-        
     ],
 
     

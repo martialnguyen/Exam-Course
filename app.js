@@ -556,7 +556,7 @@ const featuredPostApp = {
         
     },
         start: function () {
-            this.render()
+            
             this.handleEvent()
             this.prevBtnDisable()
         }
@@ -674,58 +674,58 @@ const featuredVideoApp = {
     
     
     // Render featuredVideo
-    render: function() {
-        const htmlsFeaturedPost = this.featuredVideo.map((data) => {
-            return `
-            <div class="page__content-home-featured-video-item">
-                <div class="grid__column">
-                    <a href="${data.link}" target="_blank" class="page__content-home-featured-video-link">
-                        <img src="${data.img}" alt="" class="page__content-home-featured-video-img">
-                    </a>
-                    <a href="${data.link}" target="_blank" class="page__content-home-featured-video-description">
-                        <h3 class="page__content-home-featured-video-description-text">${data.name}</h3>
-                    </a>
-                    <div class="page__content-home-featured-video-information">
-                        <div class="page__content-home-featured-video-view">
-                            <i class="fas fa-eye"></i>
-                            <strong>${data.view}</strong>
-                        </div>
-                        <div class="page__content-home-featured-video-like">
-                            <i class="fas fa-thumbs-up"></i>
-                            <strong>${data.like}</strong>
-                        </div>
-                        <div class="page__content-home-featured-video-comment">
-                            <i class="fas fa-comment"></i>
-                            <strong>${data.comment}</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            `
-        })
+    // render: function() {
+    //     const htmlsFeaturedPost = this.featuredVideo.map((data) => {
+    //         return `
+    //         <div class="page__content-home-featured-video-item">
+    //             <div class="grid__column">
+    //                 <a href="${data.link}" target="_blank" class="page__content-home-featured-video-link">
+    //                     <img src="${data.img}" alt="" class="page__content-home-featured-video-img">
+    //                 </a>
+    //                 <a href="${data.link}" target="_blank" class="page__content-home-featured-video-description">
+    //                     <h3 class="page__content-home-featured-video-description-text">${data.name}</h3>
+    //                 </a>
+    //                 <div class="page__content-home-featured-video-information">
+    //                     <div class="page__content-home-featured-video-view">
+    //                         <i class="fas fa-eye"></i>
+    //                         <strong>${data.view}</strong>
+    //                     </div>
+    //                     <div class="page__content-home-featured-video-like">
+    //                         <i class="fas fa-thumbs-up"></i>
+    //                         <strong>${data.like}</strong>
+    //                     </div>
+    //                     <div class="page__content-home-featured-video-comment">
+    //                         <i class="fas fa-comment"></i>
+    //                         <strong>${data.comment}</strong>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //         `
+    //     })
         
-        featuredVideoList.innerHTML = htmlsFeaturedPost.join('') 
+    //     featuredVideoList.innerHTML = htmlsFeaturedPost.join('') 
         
-    },
+    // },
     
     
-    handleEvent: function () {
-        const _this = this;
-        // Click button next featuredVideo
+    // handleEvent: function () {
+    //     const _this = this;
+    //     // Click button next featuredVideo
 
-        featuredVideoNextBtn.onclick = function() {
-            _this.nextBtnClick()
-            _this.nextBtnDisable()
-            _this.prevBtnDisable()
-        }
-        // Click button prev featuredVideo
+    //     featuredVideoNextBtn.onclick = function() {
+    //         _this.nextBtnClick()
+    //         _this.nextBtnDisable()
+    //         _this.prevBtnDisable()
+    //     }
+    //     // Click button prev featuredVideo
 
-        featuredVideoPrevBtn.onclick = function() {
-            _this.prevBtnClick()
-            _this.prevBtnDisable()
-            _this.nextBtnDisable()
-        }
-    },
+    //     featuredVideoPrevBtn.onclick = function() {
+    //         _this.prevBtnClick()
+    //         _this.prevBtnDisable()
+    //         _this.nextBtnDisable()
+    //     }
+    // },
 
     // Transform featuredVideo list
     
@@ -748,31 +748,31 @@ const featuredVideoApp = {
 
     // Disable Next and Prev button
     
-    nextBtnDisable: function() {
-        const featuredVideoItems = $$('.page__content-home-featured-video-item')
-        if(indexfeaturedVideo === Math.ceil((featuredVideoItems.length / 3))) {
-            featuredVideoNextBtn.style.opacity = '0'
-        } else if (indexCourses < (featuredVideoItems.length / 3)) {
-            featuredVideoNextBtn.style.opacity = '1'
-        }
-    },
+    // nextBtnDisable: function() {
+    //     const featuredVideoItems = $$('.page__content-home-featured-video-item')
+    //     if(indexfeaturedVideo === Math.ceil((featuredVideoItems.length / 3))) {
+    //         featuredVideoNextBtn.style.opacity = '0'
+    //     } else if (indexCourses < (featuredVideoItems.length / 3)) {
+    //         featuredVideoNextBtn.style.opacity = '1'
+    //     }
+    // },
     
-    prevBtnDisable: function() {
-        if(indexfeaturedVideo === 0) {
-            featuredVideoPrevBtn.style.opacity = '0'
-        } else if (indexfeaturedVideo != 0) {
-            featuredVideoPrevBtn.style.opacity = '1'
-        }
+    // prevBtnDisable: function() {
+    //     if(indexfeaturedVideo === 0) {
+    //         featuredVideoPrevBtn.style.opacity = '0'
+    //     } else if (indexfeaturedVideo != 0) {
+    //         featuredVideoPrevBtn.style.opacity = '1'
+    //     }
         
-    },
-        start: function () {
-            this.render()
-            this.handleEvent()
-            this.prevBtnDisable()
-        }
-    }
-    
-    featuredVideoApp.start()
+    // },
+    //     start: function () {
+            
+    //         this.handleEvent()
+    //         this.prevBtnDisable()
+    //     }
+    // }
+}
+    // featuredVideoApp.start()
     
     
 const pageContent = document.querySelector('.page__content')
@@ -817,6 +817,7 @@ const sidebarLeft = document.querySelector('.side__bar-respon-left')
 const exitSibar = document.querySelector('.side__bar-respon-right')
 
 menuRespon.onclick = function() {
+    console.log("hello");
     sidebarRespon.classList.add('iscover-fill');
     sidebarLeft.classList.add('isopen-sidebar-respon')
 }

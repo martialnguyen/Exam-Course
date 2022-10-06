@@ -405,15 +405,24 @@ const featuredPostApp = {
     featuredPost: [
         {
             name: 'Thời gian và động lực',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/1671/61b6368a3a089.jpg',
+            img: 'https://unica.vn/media/imagesck/1616739999_cach-giu-quyet-tam-va-dong-luc.jpg?v=1616739999',
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/thoi-gian-va-dong-luc.html',
             user: 'Sưu tầm',
             date: '2 ngày trước',
         },
         {
+            name: 'Bạn là sinh viên thì blog này là dành cho bạn P1',
+            img: 'https://codelearn.io/Upload/Blog/nhung-sai-lam-cua-sinh-vien-cong-nghe-thong-tin-phan-1-63723639975.6923.png',
+
+            avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
+            link: 'https://fullstack.edu.vn/blog/ban-la-sinh-vien-bai-blog-nay-la-danh-cho-ban-p1.html',
+            user: 'Sưu tầm',
+            date: '11 ngày trước',
+        },
+        {
             name: 'Lập trình hướng đối tượng',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/1021/6173be68944ad.jpg',
+            img: 'https://cdn.tgdd.vn/Files/2019/11/12/1217956/cach-chon-mua-laptop-cho-lap-trinh-vien-sinh-vien-it-chuan-nhat-15.jpg',
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/lap-trinh-huong-doi-tuong-oop.html',
             user: 'Sưu tầm',
@@ -421,7 +430,7 @@ const featuredPostApp = {
         },
         {
             name: 'Bạn là sinh viên thì bolg này là dành cho bạn P2',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/621/6150aa8cb42b3.jpg',
+            img: 'https://laptrinhcuocsong.com/images/lap-trinh-vien.png',
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/ban-la-sinh-vien-bai-blog-nay-la-danh-cho-ban-p2.html',
             user: 'Sưu tầm',
@@ -429,23 +438,16 @@ const featuredPostApp = {
         },
         {
             name: 'GenZ theo ngành IT và suy nghĩ hơi hơi sai lệch 😗',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/707/6155ed6c19af9.png',
+            img: 'https://mega.com.vn/media/news/525_lua_chon_laptop_cho_sinh_vien_chuyen_nganh_lap_trinh.jpg',
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/genz-theo-nganh-it-va-suy-nghi-hoi-hoi-sai-lech.html',
             user: 'Sưu tầm',
             date: '10 ngày trước',
         },
-        {
-            name: 'Bạn là sinh viên thì bolg này là dành cho bạn P1',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/621/6150aa8cb42b3.jpg',
-            avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
-            link: 'https://fullstack.edu.vn/blog/ban-la-sinh-vien-bai-blog-nay-la-danh-cho-ban-p1.html',
-            user: 'Sưu tầm',
-            date: '11 ngày trước',
-        },
+        
         {
             name: 'Tâm sự - chia sẻ - kinh nghiệm tự học - Tuổi 22.',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/261/613f00e0a3f74.png',
+            img: 'https://cdn.tgdd.vn/Files/2019/11/12/1217956/cach-chon-mua-laptop-cho-lap-trinh-vien-sinh-vien-it-chuan-nhat-15.jpg',
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/tam-su-chia-se-kinh-nghiem-tu-hoc-tuoi-22.html',
             user: 'Sưu tầm',
@@ -461,7 +463,8 @@ const featuredPostApp = {
         },
         {
             name: 'Bốn nguyên tắc khi học code',
-            img: 'https://cdn.fullstack.edu.vn/f8-production/blog_posts/1385/6197a09e60b56.png',
+            img: 'https://topdev.vn/blog/wp-content/uploads/2019/05/la%CC%A3%CC%82p-tri%CC%80nh-hu%CC%9Bo%CC%9B%CC%81ng-%C4%91o%CC%82%CC%81i-tu%CC%9Bo%CC%9B%CC%A3ng-la%CC%80-gi%CC%80.png',
+
             avatar: 'https://fullstack.edu.vn/assets/images/nobody_m.256x256.jpg',
             link: 'https://fullstack.edu.vn/blog/bon-nguyen-tac-khi-hoc-code.html',
             user: 'Sưu tầm',
@@ -556,7 +559,7 @@ const featuredPostApp = {
         
     },
         start: function () {
-            
+            this.render()
             this.handleEvent()
             this.prevBtnDisable()
         }

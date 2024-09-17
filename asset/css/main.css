@@ -169,6 +169,7 @@ html::-webkit-scrollbar {
     align-items: center;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .header__icon-menu {
@@ -1082,10 +1083,10 @@ html::-webkit-scrollbar {
 /* Tablet */
 
 @media (min-width: 740px) and (max-width: 1023px) {
-    .header__icon,
+    /* .header__icon,
     .header__information-img {
         display: none;
-    }
+    } */
 
     .header__icon-menu {
         display: flex;
@@ -1153,14 +1154,26 @@ html::-webkit-scrollbar {
 
 @media (max-width: 740px) {
     .page__sidebar,
-    .header__icon,
+    /* .header__icon, */
     .header__information-img,
     .header__search {
         display: none;
     }
+    .header__icon-heading-text{
+        font-size: 12px;
+    }
+    .course_list {
+        list-style: none;
+        margin-left: -16px;
+        /* width: 50%; */
+        display: inline-block;
+    }
 
     .header__icon-menu {
         display: flex;
+    }
+    *{
+        box-sizing: initial;
     }
 
     .header__information-notify i {
